@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "npm run generate && firebase deploy"
+    "deploy": "rm -rf .output/public && rm -rf dist && npm run generate && firebase deploy"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
