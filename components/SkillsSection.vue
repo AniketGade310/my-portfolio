@@ -32,4 +32,14 @@ const skills = [
 .skill-cat { font-family:var(--mono); font-size:0.65rem; color:var(--accent3); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.5rem; }
 .skill-name { font-family:var(--mono); font-size:0.8rem; color:var(--text-muted); font-weight:500; }
 .skill-cell:hover .skill-name { color:var(--text); }
+
+@media (max-width: 1024px) {
+  .skills-grid { margin:0 1.5rem; padding:16px; }
+}
+
+@media (max-width: 640px) {
+  .skills-grid { margin:0 1rem; padding:12px; grid-template-columns:repeat(2,1fr); gap:0.6rem; }
+  .skill-cell { padding:0.9rem 1rem; }
+  .skill-name { font-size:0.78rem; }
+}
 </style>

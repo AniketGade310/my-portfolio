@@ -39,4 +39,10 @@ tr:last-child td { border-bottom:none; }
 .sub { color:var(--text-muted); font-size:0.82rem; margin-top:0.2rem; }
 .score { font-family:var(--mono); color:var(--accent3); font-size:0.85rem; }
 .badge { display:inline-block; font-family:var(--mono); font-size:0.65rem; padding:0.2rem 0.5rem; background:rgba(67,232,184,0.08); border:1px solid rgba(67,232,184,0.2); border-radius:2px; color:var(--accent3); letter-spacing:0.1em; margin-top:0.4rem; }
+
+@media (max-width: 640px) {
+  th, td { padding:0.9rem 0.8rem 0.9rem 0; font-size:0.85rem; }
+  .reveal { padding: 0 1rem; }
+  .badge { font-size:0.6rem; padding:0.15rem 0.4rem; }
+}
 </style>

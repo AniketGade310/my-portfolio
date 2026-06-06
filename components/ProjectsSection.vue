@@ -38,4 +38,13 @@ const projects = [
 .project-tags { display:flex; flex-wrap:wrap; gap:0.4rem; }
 .tag { font-family:var(--mono); font-size:0.68rem; padding:0.25rem 0.6rem; background:rgba(255,255,255,0.04); border:1px solid var(--border); border-radius:2px; color:var(--text-dim); letter-spacing:0.05em; transition:all 0.2s; }
 .project-card:hover .tag { border-color:rgba(108,99,255,0.3); color:var(--text-muted); }
+
+@media (max-width: 1024px) {
+  .projects-grid { margin:0 1.5rem; padding:1.5rem; }
+}
+
+@media (max-width: 640px) {
+  .projects-grid { margin:0 1rem; padding:1rem; grid-template-columns:1fr; }
+  .project-card { padding:1rem; }
+}
 </style>

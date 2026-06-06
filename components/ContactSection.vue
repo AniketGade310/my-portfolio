@@ -25,4 +25,11 @@
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
 .btn-cta { display:inline-flex; align-items:center; padding:1rem 2.5rem; background:var(--accent); color:white; text-decoration:none; border-radius:3px; font-family:var(--mono); font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; transition:all 0.25s; cursor:none; border:1px solid var(--accent); }
 .btn-cta:hover { background:transparent; color:var(--accent); }
+
+@media (max-width: 640px) {
+  .inner { padding:0 1rem; }
+  .links { flex-direction:column; width:100%; }
+  .contact-link { width:100%; justify-content:center; }
+  .btn-cta { width:100%; justify-content:center; }
+}
 </style>

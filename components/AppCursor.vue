@@ -21,4 +21,9 @@ onMounted(() => {
 <style scoped>
 .cursor-dot { position:fixed; width:12px; height:12px; background:var(--accent); border-radius:50%; pointer-events:none; z-index:9999; mix-blend-mode:screen; }
 .cursor-ring { position:fixed; width:36px; height:36px; border:1px solid rgba(108,99,255,0.5); border-radius:50%; pointer-events:none; z-index:9998; transition:width 0.3s,height 0.3s; }
+
+/* Hide custom cursor on touch devices where it is not applicable */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display:none !important; }
+}
 </style>

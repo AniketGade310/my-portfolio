@@ -38,4 +38,16 @@ const jobs = [
 .exp-bullets { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
 .exp-bullets li { font-size:0.88rem; color:var(--text-muted); line-height:1.6; display:flex; gap:0.75rem; }
 .exp-bullets li::before { content:'→'; color:var(--accent); flex-shrink:0; font-family:var(--mono); font-size:0.8rem; margin-top:0.1rem; }
+
+@media (max-width: 1024px) {
+  .exp-list { gap:0.75rem; margin: 0 1.5rem; }
+  .exp-card { padding:1.6rem 1.6rem; }
+}
+
+@media (max-width: 640px) {
+  .exp-list { flex-direction:column; margin:0; }
+  .exp-card { padding:1.2rem 1rem; }
+  .exp-head { flex-direction:column; align-items:flex-start; gap:0.5rem; }
+  .exp-period { white-space:normal; }
+}
 </style>

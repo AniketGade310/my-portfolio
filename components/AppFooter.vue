@@ -8,4 +8,8 @@
 footer { position:relative; z-index:10; border-top:1px solid var(--border); padding:2rem 3rem; display:flex; justify-content:space-between; align-items:center; }
 p { font-family:var(--mono); font-size:0.72rem; color:var(--text-dim); letter-spacing:0.08em; }
 .loc { color:var(--accent3); }
+
+@media (max-width: 640px) {
+  footer { flex-direction:column; gap:0.75rem; text-align:center; padding:1.25rem 1rem; }
+}
 </style>

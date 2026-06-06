@@ -206,6 +206,25 @@ onMounted(() =>
   line-height: 1;
 }
 
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .hero-wrap { padding:4.5rem 2rem 2rem; }
+  .hero-inner { max-width: 980px; }
+  .hero-desc { max-width: 520px; }
+  .stat-num { font-size:2.4rem; }
+}
+
+@media (max-width: 640px) {
+  .hero-wrap { padding:3.5rem 1rem 2rem; }
+  .hero-inner { padding:0 0; }
+  .tag { margin-bottom:0.8rem; }
+  .hero-name { font-size: clamp(2.2rem, 8vw, 4.5rem); }
+  .hero-title { margin:0.75rem 0 1rem; font-size:1rem; }
+  .hero-desc { max-width:100%; font-size:0.92rem; margin-bottom:1.6rem; }
+  .stats { flex-direction:column; gap:1.25rem; margin-top:2rem; }
+  .stat-num { font-size:1.8rem; }
+}
+
 .stat-label {
   font-family: var(--mono);
   font-size: 1rem;
