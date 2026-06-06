@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-06-05',
   devtools: { enabled: true },
   nitro:{
-    preset:'github-pages'
+    preset:'github_pages'
   },
   app: {
     head: {
